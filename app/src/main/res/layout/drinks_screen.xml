@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+   <!-- <com.example.myfoodorderapp.CustomFont.NativelyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        android:id="@+id/drinksTv"
+        android:background="@color/app_color"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:textStyle="bold" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_drink"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#fff"
+        app:useCompatPadding="true"
+        android:layout_margin="16dp"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>

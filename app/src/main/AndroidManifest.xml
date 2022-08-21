@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yummybaryani.admin">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:exported="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+
+
+        <activity android:name="com.yummybaryani.admin.Server.SignInServer"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yummybaryani.admin.Server.MainActivityServer"
+            android:exported="true"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.yummybaryani.admin.Server.HomeActivityServer"
+            android:label="@string/title_activity_home_server"
+            android:theme="@style/AppTheme"
+            android:exported="true"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.yummybaryani.admin.Server.FoodActivityServer"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.yummybaryani.admin.Server.AllOrdersActivityServer"
+            android:label="@string/AllStoriesActivity"
+            android:exported="true"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.yummybaryani.admin.Server.NewOrdersDetailsActivity"
+            android:label="@string/newOrdersActivity"
+            android:exported="true"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.yummybaryani.admin.Server.OngoingOrderDetailActivityServer"
+            android:label="@string/onGoingOrdersActivity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.yummybaryani.admin.Server.CompletedOrderDetailActivity"
+            android:label="@string/completed_orders_activity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.CancelledOrdersDetailActivity"
+            android:label="@string/cancelledOrdersActivity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.SpecialMealsActivity"
+            android:label="@string/SpecialMealsActivity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AdminProfileActivity"
+            android:label="@string/adminProfileActivity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.SettingActivity"
+            android:label="@string/settingActivity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.OurOffersActivity"
+            android:label="@string/ourOffersActivity"
+            tools:ignore="InnerclassSeparator"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.ChatActivityAdmin"
+            android:label="@string/title_activity_chat_admin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AddColdrinksActivity"
+            android:label="@string/AddColdrinksActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AddItemCategoryActivity"
+            android:label="@string/AddItemCategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AddNewCategoryActivity"
+            android:label="@string/AddNewCategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AddSpecialMealItemActivity"
+            android:label="@string/AddSpecialMealItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.DrinksActivityServer"
+            android:label="@string/DrinksActivityServer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AddOfferItemActivity"
+            android:label="@string/AddOfferItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.SidesAndColdDrinksActivityServer"
+            android:label="@string/SidesAndColdDrinksActivityServer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity
+            android:name="com.yummybaryani.admin.Server.AddSidesActivity"
+            android:label="@string/AddSidesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="google_maps_key" />
+
+        <service
+            android:name="com.yummybaryani.admin.Firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+
+</manifest>

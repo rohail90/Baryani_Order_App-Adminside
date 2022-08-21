@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Sides"
+        android:id="@+id/sidesTv"
+        android:background="@color/app_color"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/drinksLL">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+                <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textColor="@color/Black"
+                    android:id="@+id/sideName"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/sidePrice"
+                        android:hint="Price" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_below="@+id/product_Drinks">
+            <Button
+                android:layout_width="250dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_radius"
+                android:backgroundTint="@color/app_color"
+                android:text="Save"
+                android:id="@+id/saveBtn"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

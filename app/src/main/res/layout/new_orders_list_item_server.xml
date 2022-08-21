@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:id="@+id/order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/status_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_logo" />
+
+        <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/status_image"
+            android:gravity="center"
+            android:text="Customer name"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Order id:123"
+            android:textColor="@color/Gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+            android:id="@+id/order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Total: $123"
+            android:layout_below="@id/order_id"
+            android:textColor="@color/Gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+            android:id="@+id/order_dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_id"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/status_image"
+            android:gravity="center"
+            android:text="Today at 12:33 AM"
+            android:textColor="@color/FireBrick"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+        android:id="@+id/order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_info"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:text="Order Detail"
+        android:textColor="@color/app_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/quantity_info"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/order_detail"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp" />
+
+    <View
+        android:id="@+id/view_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/quantity_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/Gray" />
+
+    <LinearLayout
+        android:id="@+id/cancel_track_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_list"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius"
+            android:text="@string/cal_customer"
+            android:id="@+id/callCustomerBtn"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:textColor="@color/Orange" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:paddingTop="8dp"
+            android:id="@+id/viewDetailsBtn"
+            android:paddingBottom="8dp"
+            android:paddingStart="4dp"
+            android:gravity="center"
+            android:paddingEnd="4dp"
+            android:background="@drawable/border_radius"
+            android:text="@string/view_details"
+            android:textColor="@color/Orange" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+           />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/red6"
+            android:textSize="11sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textAllCaps="false"
+            android:id="@+id/cancelOrderBtn"
+            android:text="@string/cancel_order"
+            android:gravity="center"
+            android:textColor="@color/white" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/Green"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:id="@+id/acceptOrderBtn"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/accept_order"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/cancel_track_info"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/app_color" />
+</RelativeLayout>

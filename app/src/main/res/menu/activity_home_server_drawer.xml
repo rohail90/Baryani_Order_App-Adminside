@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="@string/menu" />
+        <item
+            android:id="@+id/nav_all_orders"
+            android:icon="@drawable/app_logo"
+            android:title="All Orders" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/app_logo"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/nav_special_meal"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Special Meal" />
+        <item
+            android:id="@+id/nav_our_offers"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Our Offers" />
+        <item
+            android:id="@+id/nav_drinks"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Drinks and Sides" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/sign_out" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

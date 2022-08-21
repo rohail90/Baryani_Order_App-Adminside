@@ -1,0 +1,272 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/prod_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prod_image"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/border_radius"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Select Image"
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/product_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_image"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product Information"
+                        android:textColor="@color/Black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Product Name"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/food_name"
+                        android:hint="Add Item name" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Short Description"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:id="@+id/food_description"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="Short Description"
+                        android:paddingBottom="@dimen/_40sdp" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Long Description"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Price"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/circle_shape" />
+
+                            <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Half Baryani"
+                                android:textColor="@color/Black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/half_biryaniPrice"
+                                android:hint="price" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/circle_shape" />
+
+                            <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Medium Baryani"
+                                android:textColor="@color/Black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/medium_biryaniPrice"
+                                android:hint="price" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/circle_shape" />
+
+                            <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Full Baryani"
+                                android:textColor="@color/Black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/full_biryaniPrice"
+                                android:hint="price" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Discount"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/food_discount"
+                        android:hint="Discount of item" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Delivery Time"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.yummybaryani.admin.CustomFont.NativelyCustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/food_deliveryTime"
+                        android:hint="Delivery time like 30 minutes" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_alignParentBottom="true">
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_radius"
+                    android:backgroundTint="@color/app_color"
+                    android:text="Save"
+                    android:id="@+id/saveBtn"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

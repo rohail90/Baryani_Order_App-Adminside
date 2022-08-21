@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prod_image"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/app_logo"/>
+    <LinearLayout
+        android:id="@+id/root_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="1"
+        android:layout_toRightOf="@+id/prod_image">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Karachi Achanak baryani"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/itemName"
+            android:layout_weight=".5"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight=".5">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_radius_toggle_orange">
+                <TextView
+                    android:id="@+id/tbOff"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="OFF"
+                    android:textAlignment="center"
+                    android:background="@drawable/border_radius_toggle"
+                    android:textColor="@color/Black"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/tbOn"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/border_radius_toggle_orange"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/root_layout1"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toRightOf="@+id/prod_image">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Short Description"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/itemDescription"
+            android:layout_weight=".5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rs:240"
+            android:textColor="@color/Green"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textSize="18sp"
+            android:id="@+id/itemPrice"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
